@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+    <meta charset="UFT-8"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title> Gioco morra cinese pc </title>
+</head>
+
+<body>
+
+<header>
+
+    <div class="header">
+
+        <h1 align="center"><font color="white"/> GIOCO </h1>
+        <br>
+        <h2 align="center" ><font color="white"/>MORRA CINESE</h2>
+    </div>
+
+</header>
+
+<form class="form" align="center" th:action="@{/morra-cinesea/gioca}" th:method="post" th:object="${mossa}">
+    <input class="mossa" type="text" name="nome" id="name" placeholder="Inserisci la tua mossa"
+           title="Inserisci la tua mossa" th:field="*{mossa}">
+
+    <input class="bottone" type="submit"> INVIA </input>
+    <input class="bottone2" type="reset"> RESET </input>
+</form>
+
+<label th:text = "${esito.esito}"></label>
+<label th:text = "${esito.mossaGiocatore}"></label>
+<label th:text = "${esito.mossaComputer}"></label>
+
+</body>
+</html>

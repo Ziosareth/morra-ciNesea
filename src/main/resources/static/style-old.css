@@ -1,0 +1,68 @@
+
+	.header{
+		background-color: pink;
+		top: 0;
+		left:0;
+		width:100%;
+		
+	}
+
+	.form{
+		width:100%;
+		position:absolute;
+		display:inline;
+		text-align:center;
+	}
+	
+	.mossa{
+		text-align:center;
+		width:60%;
+		height:30%;
+		border-width:thick;
+	
+	}
+		
+	.bottone{
+		background-color: violet; 
+		width:50%;
+		position:relative;
+		display:inline;
+		float:left;
+		padding-left:10px;
+		padding-right:10px;
+		margin-top:50px;
+	}
+	
+	.bottone2{
+		background-color: gray; 
+		width:50%;
+		position:relative;
+		display:inline;
+		float:right;
+		padding-left:10px;
+		padding-right:10px;
+		margin-top:50px;
+	}
+	
+	.imm{
+		background-color: pink; 
+		position:relative;
+		display:inline;
+		float:right;
+		margin-right:280px;
+		margin-top:20px;
+		margin-bottom:20px;
+		padding-right:50px;
+	}
+	
+	.fondo{
+		background-color: pink;
+		width:100%;
+		position:absolute;
+		display:inline;
+		
+	}
+	
+
+	
+	
