@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <link rel="stylesheet" href="/static/style.css" type="text/css">
 
     <meta charset="UFT-8"/>
@@ -34,9 +31,14 @@
     <input class="bottone2" type="reset"> RESET </input>
 </form>
 
-<label th:text = "${esito.esito}"></label>
-<label th:text = "${esito.mossaGiocatore}"></label>
-<label th:text = "${esito.mossaComputer}"></label>
-
+<!--<label th:text = "${esito.esito}"></label>-->
+<!--<label th:text = "${esito.mossaGiocatore}"></label>-->
+<!--<label th:text = "${esito.mossaComputer}"></label>-->
+<label>Esito: </label> <label th:text = "${esito.getEsito()}"></label>
+<label>Mossa giocatore: </label><label th:text = "${esito.getMossaGiocatore()}"></label>
+<label>Mossa computer: </label><label th:text = "${esito.getMossaComputer()}"></label>
+<label>Totale Partite: </label> <label th:text = "${esito.getStatistiche().getTotalePartite()}"></label>
+<label>Partite perse: </label><label th:text = "${esito.getStatistiche().getPartitePerse()}">Partite perse</label>
+<label>Partite vinte: </label><label th:text = " ${esito.getStatistiche().getPartiteVinte()}">Partite vinte</label>
 </body>
 </html>
